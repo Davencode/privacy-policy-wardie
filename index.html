@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Wardie</title>
+  <meta name="description" content="Informativa sul trattamento dei dati personali dell'app Wardie.">
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #0f2440;
+      --muted: #52627a;
+      --primary: #1b6fd1;
+      --soft: #e4effc;
+      --line: #dbe4ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1522;
+        --card: #152133;
+        --text: #e8eef7;
+        --muted: #a3b2c7;
+        --primary: #79b0ff;
+        --soft: #1c2d45;
+        --line: #26364d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+    header { margin-bottom: 28px; }
+    .brand { color: var(--primary); font-weight: 800; letter-spacing: .5px; text-transform: uppercase; font-size: 13px; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 6px 0 8px; }
+    .updated { color: var(--muted); font-size: 14px; margin: 0; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 22px;
+      margin: 14px 0;
+    }
+    h2 { font-size: 19px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 18px 0 6px; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0 0 10px; padding-left: 20px; }
+    li { margin: 4px 0; }
+    a { color: var(--primary); }
+    .note {
+      background: var(--soft);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 12px 0 4px;
+    }
+    .muted { color: var(--muted); }
+    footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 28px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Wardie</div>
+    <h1>Informativa sulla privacy</h1>
+    <p class="updated">Ultimo aggiornamento: 22 ottobre 2026</p>
+  </header>
+
+  <section>
+    <h2>In breve</h2>
+    <ul>
+      <li>Wardie aiuta i professionisti sanitari a trovare colleghi per un <strong>cambio compensativo</strong>.</li>
+      <li>Raccogliamo solo i dati che servono a questo: chi sei, dove lavori e dove vorresti andare.</li>
+      <li>Il tuo <strong>codice fiscale non viene mai salvato</strong>: ne conserviamo solo un'impronta irreversibile.</li>
+      <li>I tuoi contatti li vedono solo i colleghi con cui hai un match.</li>
+      <li>Niente pubblicità, niente profilazione, nessuna vendita di dati.</li>
+      <li>Gli eventuali acquisti passano da <strong>Google Play</strong>: non vediamo mai i dati della tua carta.</li>
+      <li>Puoi eliminare il tuo account dall'app in qualsiasi momento.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>1. Titolare del trattamento</h2>
+    <p>Il titolare del trattamento dei dati è <strong>Davide Belardi</strong>, sviluppatore dell'app Wardie.</p>
+    <p>Per qualsiasi domanda o richiesta sui tuoi dati: <a href="mailto:davidebelardi1994@gmail.com">davidebelardi1994@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>2. Quali dati raccogliamo e perché</h2>
+
+    <h3>Account</h3>
+    <ul>
+      <li><strong>Nome, cognome ed email</strong>: per creare l'account e accedere.</li>
+      <li><strong>Password</strong>: gestita da Firebase Authentication; non la conosciamo e non la vediamo.</li>
+      <li><strong>Telefono</strong> (facoltativo): per farti contattare dai colleghi con cui hai un match.</li>
+      <li><strong>Figura professionale</strong> e, per i medici, <strong>disciplina</strong>: per mostrarti solo colleghi con cui il cambio è possibile.</li>
+      <li><strong>Accettazione del Patto Wardie</strong>: versione e data, come prova dell'impegno preso.</li>
+    </ul>
+
+    <h3>Codice fiscale</h3>
+    <p>Alla registrazione inserisci il codice fiscale, a mano o inquadrando la tessera sanitaria. Lo usiamo per un solo scopo: impedire che la stessa persona crei più account o rientri dopo essere stata esclusa.</p>
+    <ul>
+      <li>Il codice fiscale <strong>non viene salvato né inviato in chiaro</strong>: sul tuo telefono ne calcoliamo un'impronta crittografica irreversibile (hash SHA-256), ed è solo questa che conserviamo.</li>
+      <li>La lettura del documento con la fotocamera avviene <strong>interamente sul dispositivo</strong>: le immagini non vengono salvate né inviate.</li>
+    </ul>
+
+    <h3>Tesserino professionale (facoltativo)</h3>
+    <p>Puoi aggiungere i dati del tuo tesserino aziendale per far verificare il tuo profilo: <strong>matricola</strong>, <strong>azienda di provenienza</strong> e <strong>foto</strong>. Questi dati li vedi solo tu; li consultiamo esclusivamente per verificare che tu sia davvero un professionista sanitario.</p>
+
+    <h3>Annuncio di cambio</h3>
+    <ul>
+      <li><strong>Struttura, comune e provincia</strong> in cui lavori.</li>
+      <li><strong>Province in cui vorresti andare</strong> e, se vuoi, le tue <strong>preferenze</strong> (ad esempio gli ospedali preferiti).</li>
+      <li>Se accetti o meno gli <strong>scambi a 3</strong>.</li>
+    </ul>
+
+    <h3>Attività nell'app</h3>
+    <ul>
+      <li>I tuoi <strong>"Mi interessa" e "Passo"</strong> sugli annunci dei colleghi, per non riproporti gli stessi annunci e creare i match.</li>
+      <li>I <strong>match</strong> e le <strong>proposte di scambio a 3</strong>, con lo stato dello scambio e le conferme di trasferimento.</li>
+      <li>In caso di ritiro da un match, se lo indichi, il <strong>motivo</strong> scelto da un elenco (ad esempio motivi di salute, familiari o di maternità/paternità). Registriamo solo la categoria, mai documenti o dettagli.</li>
+    </ul>
+
+    <h3>Acquisti in-app (pacchetti di "Mi interessa")</h3>
+    <p>Wardie può offrire, accanto ai "Mi interessa" gratuiti, pacchetti di "Mi interessa" aggiuntivi a pagamento unico, senza abbonamento. Se acquisti un pacchetto:</p>
+    <ul>
+      <li>il pagamento è gestito interamente da <strong>Google Play</strong> (o, in futuro, dall'App Store di Apple). <strong>Non riceviamo e non conserviamo</strong> i dati della tua carta o del tuo metodo di pagamento;</li>
+      <li>riceviamo e conserviamo solo i dati dell'acquisto: <strong>codice dell'ordine</strong>, <strong>pacchetto acquistato</strong>, <strong>data</strong>, <strong>stato</strong> (completato, rimborsato…) e il codice tecnico che serve a verificarlo con lo store;</li>
+      <li>usiamo questi dati per verificare che l'acquisto sia valido, accreditarti i "Mi interessa", evitare che lo stesso acquisto venga accreditato due volte e gestire eventuali rimborsi;</li>
+      <li>nel tuo profilo salviamo il numero di "Mi interessa" ancora disponibili.</li>
+    </ul>
+
+    <h3>Foto del profilo (facoltativa)</h3>
+    <p>Se scegli una foto, la conserviamo come immagine compressa. È la stessa foto del tesserino.</p>
+
+    <h3>Sul tuo dispositivo</h3>
+    <p>L'app salva sul telefono solo alcune preferenze, ad esempio il tema grafico.</p>
+  </section>
+
+  <section>
+    <h2>3. Chi vede i tuoi dati</h2>
+    <ul>
+      <li><strong>I colleghi della tua stessa figura</strong> (e, per i medici, della stessa disciplina) vedono il tuo annuncio: nome con l'iniziale del cognome (es. "Giulia R."), struttura, comune, provincia, mete e preferenze.</li>
+      <li><strong>I colleghi con cui hai un match</strong> vedono anche nome e cognome completi, email e telefono, per potervi accordare sul trasferimento.</li>
+      <li><strong>Nessun altro utente</strong> vede il tuo codice fiscale (che comunque non conserviamo), il tesserino, la foto o i tuoi "Mi interessa".</li>
+      <li><strong>Il titolare</strong> accede ai dati solo per gestire il servizio, verificare i tesserini e gli acquisti e rispondere alle tue richieste.</li>
+      <li><strong>Google Play</strong> (o l'App Store), se fai un acquisto, tratta i dati di pagamento come titolare autonomo, secondo la propria informativa.</li>
+    </ul>
+    <p>Non vendiamo, non cediamo e non condividiamo i tuoi dati con terzi per fini commerciali. Wardie non ha rapporti con aziende sanitarie, ospedali o amministrazioni pubbliche e non trasmette loro alcun dato.</p>
+  </section>
+
+  <section>
+    <h2>4. Basi giuridiche</h2>
+    <ul>
+      <li><strong>Esecuzione del servizio</strong> (art. 6.1.b GDPR): account, annuncio, match e contatti tra colleghi, acquisti e accredito dei pacchetti.</li>
+      <li><strong>Obblighi di legge</strong> (art. 6.1.c GDPR): conservazione dei dati degli acquisti richiesta dalle norme fiscali e contabili.</li>
+      <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): impronta del codice fiscale contro account doppi e utenti esclusi, sicurezza del servizio, verifica dei tesserini, prevenzione delle frodi negli acquisti.</li>
+      <li><strong>Consenso</strong> (art. 6.1.a e, per il motivo di ritiro legato alla salute, art. 9.2.a GDPR): dati facoltativi come telefono, foto, tesserino e motivo del ritiro. Puoi revocarlo in qualsiasi momento, togliendo il dato o scrivendoci.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Dove sono conservati i dati</h2>
+    <p>Wardie usa <strong>Firebase</strong>, servizio di Google, come fornitore tecnico (responsabile del trattamento):</p>
+    <ul>
+      <li><strong>Cloud Firestore</strong>, il database con profili, annunci e match, si trova nell'<strong>Unione Europea</strong> (regione eur3, Belgio e Paesi Bassi).</li>
+      <li><strong>Firebase Authentication</strong> gestisce email e password e può trattare alcuni dati anche fuori dall'UE, ad esempio negli Stati Uniti. In questi casi Google applica le garanzie previste dal GDPR (EU-US Data Privacy Framework e clausole contrattuali standard).</li>
+    </ul>
+    <p>Gli <strong>acquisti in-app</strong> sono gestiti da Google Play (Google Ireland Limited). Per verificarli e accreditarli potremmo usare un servizio tecnico aggiuntivo che comunica con Google Play: in quel caso lo indicheremo qui, con le relative garanzie.</p>
+    <p class="muted">Informativa privacy di Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a> · Informativa privacy di Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
+  </section>
+
+  <section>
+    <h2>6. Per quanto tempo</h2>
+    <ul>
+      <li>I dati del tuo account restano finché l'account è attivo.</li>
+      <li>Quando <strong>elimini l'account</strong> cancelliamo subito profilo, annuncio, foto, tesserino, i tuoi "Mi interessa" e "Passo" e l'impronta del codice fiscale.</li>
+      <li>I <strong>match già conclusi</strong> restano, perché appartengono anche agli altri partecipanti e documentano l'impegno preso. Puoi chiederne la cancellazione scrivendoci.</li>
+      <li>Se vieni <strong>escluso</strong> per violazione del Patto Wardie, conserviamo solo l'impronta del codice fiscale con l'indicazione dell'esclusione, per impedirti di registrarti di nuovo.</li>
+      <li>I <strong>dati degli acquisti</strong> restano anche dopo l'eliminazione dell'account, per il tempo richiesto dalle norme fiscali e contabili (fino a 10 anni), e solo per questi scopi.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Permessi del telefono</h2>
+    <ul>
+      <li><strong>Fotocamera</strong>: per leggere il codice fiscale dalla tessera sanitaria e, se vuoi, scattare la foto del profilo. Le letture avvengono sul dispositivo.</li>
+      <li><strong>Foto</strong>: solo l'immagine che scegli tu, quando aggiungi la foto del profilo.</li>
+    </ul>
+    <p>L'app non usa il microfono, la posizione o i contatti del telefono.</p>
+  </section>
+
+  <section>
+    <h2>8. Cosa non facciamo</h2>
+    <ul>
+      <li>Nessuna pubblicità.</li>
+      <li>Nessuno strumento di analisi o tracciamento di terze parti.</li>
+      <li>Nessuna profilazione a fini commerciali e nessuna vendita di dati.</li>
+      <li>Nessun dato di carte o metodi di pagamento: gli acquisti passano dallo store.</li>
+      <li>Nessun abbonamento o rinnovo automatico.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>9. Età minima</h2>
+    <p>Wardie è riservata a professionisti sanitari maggiorenni. Non raccogliamo consapevolmente dati di minori di 18 anni.</p>
+  </section>
+
+  <section>
+    <h2>10. Sicurezza</h2>
+    <p>Le comunicazioni tra app e server sono cifrate. Regole di sicurezza sul database fanno sì che ogni utente possa leggere e modificare solo ciò che gli spetta. Nessun sistema è sicuro al 100%, ma adottiamo misure adeguate a proteggere i tuoi dati.</p>
+  </section>
+
+  <section>
+    <h2>11. I tuoi diritti</h2>
+    <p>In base al GDPR puoi chiedere in qualsiasi momento di:</p>
+    <ul>
+      <li>accedere ai tuoi dati e riceverne una copia;</li>
+      <li>correggerli o aggiornarli;</li>
+      <li>cancellarli;</li>
+      <li>limitarne il trattamento od opporti;</li>
+      <li>riceverli in un formato leggibile (portabilità);</li>
+      <li>revocare il consenso dato.</li>
+    </ul>
+    <p>Scrivi a <a href="mailto:davidebelardi1994@gmail.com">davidebelardi1994@gmail.com</a>: rispondiamo entro 30 giorni. Puoi anche presentare reclamo al <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+    <div class="note">Per eliminare l'account e i dati segui le istruzioni nella pagina <a href="elimina-account.html">Elimina il tuo account</a>.</div>
+  </section>
+
+  <section>
+    <h2>12. Modifiche</h2>
+    <p>Se cambiamo questa informativa aggiorniamo la data in cima alla pagina. Per modifiche importanti ti avviseremo nell'app.</p>
+  </section>
+
+  <footer>Wardie · <a href="elimina-account.html">Elimina il tuo account</a></footer>
+</main>
+</body>
+</html>
