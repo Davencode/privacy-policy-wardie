@@ -66,7 +66,7 @@
   <header>
     <div class="brand">Wardie</div>
     <h1>Informativa sulla privacy</h1>
-    <p class="updated">Ultimo aggiornamento: 28 ottobre 2026</p>
+    <p class="updated">Ultimo aggiornamento: 10 novembre 2026</p>
   </header>
 
   <section>
@@ -107,7 +107,7 @@
     </ul>
 
     <h3>Tesserino professionale (facoltativo)</h3>
-    <p>Puoi aggiungere i dati del tuo tesserino aziendale per far verificare il tuo profilo: <strong>matricola</strong>, <strong>azienda di provenienza</strong> e <strong>foto</strong>. Questi dati li vedi solo tu; li consultiamo esclusivamente per verificare che tu sia davvero un professionista sanitario.</p>
+    <p>Puoi aggiungere i dati del tuo tesserino aziendale per far verificare il tuo profilo: <strong>azienda di provenienza</strong> e <strong>foto</strong>. Questi dati li vedi solo tu; li consultiamo esclusivamente per verificare che tu sia davvero un professionista sanitario.</p>
 
     <h3>Annuncio di cambio</h3>
     <ul>
@@ -119,9 +119,9 @@
     <h3>Attività nell'app</h3>
     <ul>
       <li>I tuoi <strong>"Mi interessa" e "Passo"</strong> sugli annunci dei colleghi, per non riproporti gli stessi annunci e creare i match.</li>
-      <li>Quanti <strong>"Mi interessa" hai usato oggi</strong>, per applicare il limite di 10 al giorno.</li>
+      <li>Quanti <strong>"Mi interessa" hai usato oggi</strong>, per applicare il limite di 15 al giorno.</li>
       <li>I <strong>match</strong> e le <strong>proposte di scambio a 3</strong>, con lo stato dello scambio e le conferme di trasferimento.</li>
-      <li>In caso di ritiro da un match per giusta causa, il <strong>motivo</strong> scelto da un elenco (ad esempio motivi di salute, familiari o di maternità/paternità) e la <strong>descrizione</strong> che scrivi tu per spiegarlo, per valutare la giusta causa. Non chiediamo documenti: scrivi solo ciò che ritieni necessario.</li>
+      <li>In caso di ritiro da un match per giusta causa, il <strong>motivo</strong> scelto da un elenco (ad esempio motivi di salute, familiari o di maternità/paternità) e la <strong>descrizione</strong> che scrivi tu per spiegarlo, per valutare la giusta causa. Non chiediamo documenti: scrivi solo ciò che ritieni necessario. Motivo e descrizione li leggiamo solo noi: i colleghi del match vedono soltanto che ti sei ritirato per giusta causa.</li>
     </ul>
 
     <h3>Segnalazioni e blocchi</h3>
@@ -135,7 +135,10 @@
     <p>Se scegli una foto, la conserviamo come immagine compressa. È la stessa foto del tesserino.</p>
 
     <h3>Sul tuo dispositivo</h3>
-    <p>L'app salva sul telefono solo alcune preferenze, ad esempio il tema grafico.</p>
+    <p>L'app salva sul telefono solo alcune preferenze, ad esempio il tema grafico, e l'elenco dei colleghi che hai già valutato in "Scopri", per non riscaricarlo a ogni apertura.</p>
+
+    <h3>Rapporti sugli arresti anomali</h3>
+    <p>Se l'app si chiude per un errore, <strong>Firebase Crashlytics</strong> ci invia un rapporto tecnico: il punto del codice in cui è avvenuto l'errore, modello e sistema operativo del telefono, versione dell'app e un identificativo casuale dell'installazione. Il rapporto <strong>non contiene</strong> nome, email, codice fiscale o contenuti dell'app e <strong>non è collegato al tuo account</strong>. Serve solo a trovare e correggere gli errori.</p>
   </section>
 
   <section>
@@ -143,7 +146,7 @@
     <ul>
       <li><strong>I colleghi della tua stessa figura</strong> (e, per i medici, della stessa disciplina) vedono il tuo annuncio: nome con l'iniziale del cognome (es. "Giulia R."), struttura, comune, provincia, mete e preferenze.</li>
       <li><strong>I colleghi con cui hai un match</strong> vedono anche nome e cognome completi, email e telefono, per potervi accordare sul trasferimento.</li>
-      <li><strong>Nessun altro utente</strong> vede il tuo codice fiscale (che comunque non conserviamo), il tesserino, la foto o i tuoi "Mi interessa".</li>
+      <li><strong>Nessun altro utente</strong> vede il tuo codice fiscale (che comunque non conserviamo), il tesserino, la foto, i tuoi "Mi interessa" o il motivo e la descrizione di un tuo ritiro.</li>
       <li><strong>Il titolare</strong> accede ai dati solo per gestire il servizio, verificare i tesserini, valutare i ritiri per giusta causa e le segnalazioni, e rispondere alle tue richieste.</li>
     </ul>
     <p>Non vendiamo, non cediamo e non condividiamo i tuoi dati con terzi per fini commerciali. Wardie non ha rapporti con aziende sanitarie, ospedali o amministrazioni pubbliche e non trasmette loro alcun dato.</p>
@@ -153,7 +156,7 @@
     <h2>4. Basi giuridiche</h2>
     <ul>
       <li><strong>Esecuzione del servizio</strong> (art. 6.1.b GDPR): account, annuncio, "Mi interessa" e limite giornaliero, match e contatti tra colleghi, blocchi.</li>
-      <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): impronta del codice fiscale contro account doppi e utenti esclusi, sicurezza del servizio, verifica dei tesserini, gestione delle segnalazioni.</li>
+      <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): impronta del codice fiscale contro account doppi e utenti esclusi, sicurezza del servizio, verifica dei tesserini, gestione delle segnalazioni, rapporti sugli arresti anomali per correggere gli errori dell'app.</li>
       <li><strong>Consenso</strong> (art. 6.1.a e, per i motivi di ritiro legati alla salute, art. 9.2.a GDPR): dati facoltativi come telefono, foto, tesserino, motivo e descrizione del ritiro. Puoi revocarlo in qualsiasi momento, togliendo il dato o scrivendoci.</li>
     </ul>
   </section>
@@ -164,6 +167,7 @@
     <ul>
       <li><strong>Cloud Firestore</strong>, il database con profili, annunci e match, si trova nell'<strong>Unione Europea</strong> (regione eur3, Belgio e Paesi Bassi).</li>
       <li><strong>Firebase Authentication</strong> gestisce email e password e può trattare alcuni dati anche fuori dall'UE, ad esempio negli Stati Uniti. In questi casi Google applica le garanzie previste dal GDPR (EU-US Data Privacy Framework e clausole contrattuali standard).</li>
+      <li><strong>Firebase Crashlytics</strong> tratta i rapporti sugli arresti anomali, anche negli Stati Uniti con le stesse garanzie, e li conserva per 90 giorni.</li>
     </ul>
     <p class="muted">Informativa privacy di Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a> · Informativa privacy di Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
   </section>
@@ -192,7 +196,7 @@
     <h2>8. Cosa non facciamo</h2>
     <ul>
       <li>Nessuna pubblicità.</li>
-      <li>Nessuno strumento di analisi o tracciamento di terze parti.</li>
+      <li>Nessuno strumento di analisi del comportamento o di tracciamento: l'unico servizio di diagnostica è Firebase Crashlytics, per gli arresti anomali dell'app.</li>
       <li>Nessuna profilazione a fini commerciali e nessuna vendita di dati.</li>
       <li>Nessun pagamento, abbonamento o rinnovo automatico: l'app è gratuita.</li>
     </ul>
