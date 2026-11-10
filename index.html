@@ -107,12 +107,12 @@
     </ul>
 
     <h3>Tesserino professionale (facoltativo)</h3>
-    <p>Puoi aggiungere i dati del tuo tesserino aziendale per far verificare il tuo profilo: <strong>azienda di provenienza</strong> e <strong>foto</strong>. Questi dati li vedi solo tu; li consultiamo esclusivamente per verificare che tu sia davvero un professionista sanitario.</p>
+    <p>Puoi aggiungere i dati del tuo tesserino aziendale per far verificare il tuo profilo: <strong>azienda di provenienza</strong>, <strong>struttura di provenienza</strong> (facoltativa) e <strong>foto</strong>. Questi dati li vedi solo tu; li consultiamo esclusivamente per verificare che tu sia davvero un professionista sanitario.</p>
 
     <h3>Annuncio di cambio</h3>
     <ul>
       <li><strong>Struttura, comune e provincia</strong> in cui lavori.</li>
-      <li><strong>Struttura, provincia e comune</strong> in cui vorresti andare (il comune è facoltativo) e, se vuoi, le tue <strong>preferenze</strong> (ad esempio gli ospedali preferiti).</li>
+      <li><strong>Struttura, provincia e comune</strong> in cui vorresti andare (il comune è facoltativo) e, se vuoi, le tue <strong>preferenze</strong> (ad esempio i reparti preferiti).</li>
       <li>Se accetti o meno gli <strong>scambi a 3</strong>.</li>
     </ul>
 
@@ -137,6 +137,9 @@
     <h3>Sul tuo dispositivo</h3>
     <p>L'app salva sul telefono solo alcune preferenze, ad esempio il tema grafico, e l'elenco dei colleghi che hai già valutato in "Scopri", per non riscaricarlo a ogni apertura.</p>
 
+    <h3>Notifiche (facoltative)</h3>
+    <p>Se attivi le notifiche, salviamo un <strong>identificativo del tuo telefono per le notifiche</strong> (fornito da Firebase Cloud Messaging), il sistema operativo (iOS o Android) e quali notifiche vuoi ricevere: nuovi match e colleghi compatibili. Le notifiche <strong>non contengono dati personali</strong> (ad esempio "Hai un nuovo match!") e non sono promozionali. Puoi spegnerle dal Profilo o dalle impostazioni del telefono; quando esci dall'account l'identificativo viene cancellato.</p>
+
     <h3>Rapporti sugli arresti anomali</h3>
     <p>Se l'app si chiude per un errore, <strong>Firebase Crashlytics</strong> ci invia un rapporto tecnico: il punto del codice in cui è avvenuto l'errore, modello e sistema operativo del telefono, versione dell'app e un identificativo casuale dell'installazione. Il rapporto <strong>non contiene</strong> nome, email, codice fiscale o contenuti dell'app e <strong>non è collegato al tuo account</strong>. Serve solo a trovare e correggere gli errori.</p>
   </section>
@@ -157,7 +160,7 @@
     <ul>
       <li><strong>Esecuzione del servizio</strong> (art. 6.1.b GDPR): account, annuncio, "Mi interessa" e limite giornaliero, match e contatti tra colleghi, blocchi.</li>
       <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): impronta del codice fiscale contro account doppi e utenti esclusi, sicurezza del servizio, verifica dei tesserini, gestione delle segnalazioni, rapporti sugli arresti anomali per correggere gli errori dell'app.</li>
-      <li><strong>Consenso</strong> (art. 6.1.a e, per i motivi di ritiro legati alla salute, art. 9.2.a GDPR): dati facoltativi come telefono, foto, tesserino, motivo e descrizione del ritiro. Puoi revocarlo in qualsiasi momento, togliendo il dato o scrivendoci.</li>
+      <li><strong>Consenso</strong> (art. 6.1.a e, per i motivi di ritiro legati alla salute, art. 9.2.a GDPR): dati facoltativi come telefono, foto, tesserino, motivo e descrizione del ritiro, notifiche. Puoi revocarlo in qualsiasi momento, togliendo il dato o scrivendoci.</li>
     </ul>
   </section>
 
@@ -168,6 +171,8 @@
       <li><strong>Cloud Firestore</strong>, il database con profili, annunci e match, si trova nell'<strong>Unione Europea</strong> (regione eur3, Belgio e Paesi Bassi).</li>
       <li><strong>Firebase Authentication</strong> gestisce email e password e può trattare alcuni dati anche fuori dall'UE, ad esempio negli Stati Uniti. In questi casi Google applica le garanzie previste dal GDPR (EU-US Data Privacy Framework e clausole contrattuali standard).</li>
       <li><strong>Firebase Crashlytics</strong> tratta i rapporti sugli arresti anomali, anche negli Stati Uniti con le stesse garanzie, e li conserva per 90 giorni.</li>
+      <li><strong>Firebase Cloud Messaging</strong> (Google) consegna le notifiche al tuo telefono, tramite i servizi di Apple o Google, anche fuori dall'UE con le stesse garanzie.</li>
+      <li>Il programma che una volta all'ora prepara le notifiche gira sui server di <strong>GitHub</strong> (Microsoft), anche negli Stati Uniti con le stesse garanzie: legge solo ciò che serve a decidere chi avvisare e non conserva dati.</li>
     </ul>
     <p class="muted">Informativa privacy di Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a> · Informativa privacy di Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
   </section>
@@ -176,7 +181,7 @@
     <h2>6. Per quanto tempo</h2>
     <ul>
       <li>I dati del tuo account restano finché l'account è attivo.</li>
-      <li>Quando <strong>elimini l'account</strong> cancelliamo subito profilo, annuncio, foto, tesserino, i tuoi "Mi interessa" e "Passo", i blocchi fatti e ricevuti e l'impronta del codice fiscale.</li>
+      <li>Quando <strong>elimini l'account</strong> cancelliamo subito profilo, annuncio, foto, tesserino, i tuoi "Mi interessa" e "Passo", i blocchi fatti e ricevuti, gli identificativi per le notifiche e l'impronta del codice fiscale.</li>
       <li>I <strong>match già conclusi o ritirati</strong> restano, compresi motivo e descrizione di un eventuale ritiro, perché appartengono anche agli altri partecipanti e documentano l'impegno preso. Puoi chiederne la cancellazione scrivendoci.</li>
       <li>Le <strong>segnalazioni</strong> restano per il tempo necessario a verificarle e a prevenire abusi.</li>
       <li>Se vieni <strong>escluso</strong> per violazione del Patto Wardie, conserviamo l'impronta del codice fiscale con l'indicazione dell'esclusione, per impedirti di registrarti di nuovo, e il profilo, non più visibile agli altri utenti. Puoi chiedere la cancellazione del profilo scrivendoci: l'impronta resta.</li>
@@ -195,7 +200,7 @@
   <section>
     <h2>8. Cosa non facciamo</h2>
     <ul>
-      <li>Nessuna pubblicità.</li>
+      <li>Nessuna pubblicità e nessuna notifica promozionale.</li>
       <li>Nessuno strumento di analisi del comportamento o di tracciamento: l'unico servizio di diagnostica è Firebase Crashlytics, per gli arresti anomali dell'app.</li>
       <li>Nessuna profilazione a fini commerciali e nessuna vendita di dati.</li>
       <li>Nessun pagamento, abbonamento o rinnovo automatico: l'app è gratuita.</li>
